@@ -1,18 +1,17 @@
 import React from 'react';
-
-import './Menu.css'; 
+import './Menu.css'; // Make sure to import the correct CSS file if it exists.
 
 const Menu = () => {
   return (
     <div className="menu-container">
       <div className="menu-lateral">
         <div className="logo">
-          <img src="GES.png" alt="Logo da Empresa" />
+          <img href= "GES.png" alt="Logo da Empresa" />
         </div>
         <ul>
-          <li><a href="#"><i className="fas fa-tachometer-alt"></i> Dashboard</a></li>
-          <li><a href="#"><i className="fas fa-file-alt"></i> Relatórios</a></li>
-          <li><a href="#"><i className="fas fa-sign-out-alt"></i> SAIR</a></li>
+          <li><a href="TODO"><i className="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="TODO"><i className="fas fa-file-alt"></i> Relatórios</a></li>
+          <li><a href="/"><i className="fas fa-sign-out-alt"></i> SAIR</a></li>
         </ul>
       </div>
   
@@ -36,7 +35,7 @@ const Menu = () => {
           <div className="user-list">
             <div className="user-item">
               <div className="user-avatar">
-                <img src="ges\src\onix-branco.png" alt="Usuário 1" />
+                <img src="onix.png" alt="Carro 1" />
               </div>
               <div className="user-details">
                 <h3>Nome do Associado 1</h3>
@@ -48,7 +47,7 @@ const Menu = () => {
             </div>
             <div className="user-item">
               <div className="user-avatar">
-                <img src="camaro-amarelo.png" alt="Usuário 2" />
+                <img src="camaro.png" alt="Usuário 2" />
               </div>
               <div className="user-details">
                 <h3>Nome do Associado 2</h3>
@@ -63,7 +62,7 @@ const Menu = () => {
         </div>
       </div>
       <footer>
-        Todos os direitos reservados &copy; 2023
+        Todos os direitos reservados &copy; {new Date().getFullYear()}
       </footer>
     </div>
   );
