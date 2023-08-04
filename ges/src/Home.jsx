@@ -1,15 +1,21 @@
 import React from 'react';
 import './Menu.css'; // Make sure to import the correct CSS file if it exists.
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Dashboard from './Dashboard';
+
+
 
 const Menu = () => {
   return (
+    
     <div className="menu-container">
+      
       <div className="menu-lateral">
         <div className="logo">
           <img src="GES.png" alt="Logo da Empresa" />
         </div>
         <ul>
-          <li><a href="TODO"><i className="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="/Dashboard"><i className="fas fa-tachometer-alt"></i> Dashboard</a></li>
           <li><a href="TODO"><i className="fas fa-file-alt"></i> Relatórios</a></li>
           <li><a href="/"><i className="fas fa-sign-out-alt"></i> SAIR</a></li>
         </ul>

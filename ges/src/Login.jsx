@@ -56,6 +56,9 @@ function Login() {
           <a href="/forgot-password">Esqueceu sua senha?</a>
 
         </p>
+        <p className="signup-link">
+          <a href = "/Register"> Não possui conta?</a>
+          </p>
       </form>
     </div>
   );
